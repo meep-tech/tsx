@@ -1,0 +1,6 @@
+{
+  "extends": "../../tsconfig.tsx.json",
+  "compilerOptions": {
+    "skipLibCheck": true,
+  }
+}

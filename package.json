@@ -1,0 +1,47 @@
+{
+  "name": "@meep-tech/tsx",
+  "version": "0.1.0",
+  "description": "Typed JSX templating using TS.",
+  "author": "meep.tech",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "github.com/meep-tech/tsx"
+  },
+  "main": "build/index.js",
+  "types": "build/types/index.d.ts",
+  "scripts": {
+    "init": "npm i",
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "clean": "npm run clean:lib && npm run clean:npm",
+    "init:clean": "npm i --no-save shx",
+    "clean:npm": "npm run init:clean && shx rm -rf package-lock.json && shx rm -rf node_modules",
+    "clean:lib": "npm run init:clean && shx rm -rf build",
+    "reinit": "npm run clean && npm run init",
+    "recheck": "npm run reinit && npm run check",
+    "rebuild": "npm run reinit && npm run build"
+  },
+  "dependencies": {
+    "@meep-tech/debug": "../debug",
+    "@meep-tech/types": "../types",
+    "@meep-tech/guards": "../guards",
+    "@wessberg/connection-observer": "^1.0.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "keywords": [
+    "ts",
+    "js",
+    "tsx",
+    "jsx",
+    "react",
+    "components",
+    "ui",
+    "html",
+    "ux",
+    "gui",
+    "dom"
+  ]
+}

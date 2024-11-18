@@ -1,0 +1,29 @@
+## Deprecated
+**/.old
+**/**.old.**
+**/**.old
+
+# Notes
+**/_notes
+
+## IDE Settings
+**/.vs
+**/.vscode
+**/.idea
+
+# Dependencies
+package-lock.json
+**/node_modules
+**/obj
+
+## Builds
+**/build
+**/bin
+**/dist
+
+## Enviroment Arguments
+.envrc
+**/**.local.**
+**/**.dev.**
+**/**.prod.**
+!**/**.example.**
